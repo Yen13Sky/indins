@@ -1,0 +1,93 @@
+.comments {
+
+
+	&__wrapper {
+		background: $backgroundBlue;
+		border-radius: 4px;
+
+	}
+
+	&__row {
+		position: relative;
+		padding: 5px 10px;
+		color: $white;
+
+		&::after{
+			content: '';
+			position: absolute;
+			width: 50%;
+			height: 1px;
+			background: $blue;
+			margin: 10px 0 0 0;
+		}
+	}
+
+	&__user {
+		color: $blue;
+		line-height: 120%;
+		margin: 10px 0 15px 0 ;
+	}
+
+	&__title {
+		font-size: 22px;
+		line-height: 150%;
+
+	}
+
+	&__text {
+		max-width: 50%;
+		text-align: left;
+	}
+	&__title-comment{
+		color: $blue;
+		line-height: 150%;
+		font-size: 18px;
+		margin: 25px 0 15px 0;
+		padding: 5px 10px;
+	}
+
+
+}
+.form {
+	margin: 22px 0 0 0;
+
+	&__control {
+		padding: 5px 10px;
+		max-width: 40%;
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		margin: 0 0 15px 0;
+	}
+
+	&__label {
+		color: $blue;
+		line-height: 150%;
+		font-size: 16px;
+
+
+	}
+
+	&__input {
+		border: 1px solid $blue;
+		border-radius: 4px;
+		padding: 3px 10px;
+		margin: 0 0 0 10px;
+
+	}
+
+	&__btn {
+		border: 1px solid $blue;
+		color: $blue;
+		padding: 5px 15px;
+		margin: 18px 0 0 0;
+		&:hover {
+			background-color: $backgroundBlue;
+			color: $white;
+			border: 1px solid $backgroundBlue;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+		}
+	}
+}
