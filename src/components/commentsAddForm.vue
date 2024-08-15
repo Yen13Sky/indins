@@ -30,7 +30,7 @@ export default {
 
   setup (props, { emit }) {
     const store = useStore()
-    const idPost = ref(props.id)
+    const idPost = props.id
     const email = ref('')
     const title = ref('')
     const text = ref('')
