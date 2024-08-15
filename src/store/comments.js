@@ -10,7 +10,7 @@ export default {
     },
     addNewComment (state, comment) {
       state.comments.push(comment)
-      console.log('YES')
+      
     }
   },
   actions: {
