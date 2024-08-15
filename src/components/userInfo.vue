@@ -21,7 +21,7 @@ export default {
   props: ['id'],
   setup (props) {
     const store = useStore()
-    const id = ref(props.id)
+    const id = props.id
     const user = ref({})
 
     onMounted(async () => {
