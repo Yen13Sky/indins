@@ -19,7 +19,7 @@ export default {
   props: ['id'],
   setup (props) {
     const store = useStore()
-    const idPost = ref(props.id)
+    const idPost = props.id
     const comments = ref([])
 
     onMounted(async () => {
