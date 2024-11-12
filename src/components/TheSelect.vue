@@ -3,7 +3,7 @@
     <label  class="post__label">
       Выбрать пост по пользователю
       <select  class="post__select" v-model="userId">
-        <option disabled value="null">Выберете посты по имени</option>
+        <option disabled value="null">Выберете посты по name</option>
         <option v-for="user in users" :key="user.id" :value="user.id">{{ user.name }}</option>
       </select>
     </label>
